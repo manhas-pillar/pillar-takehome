@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Github Dashboard</title>
+</head>
+
+<body>
+    <h1>Github Dashboard for: {{name}} </h1>
+    {% for data_type in data %}
+    <h2>Data Type: {{data_type}}</h2>
+    <table>
+        <tr>
+            <th>Repo Name</th>
+            <th>Number of {{data_type}}</th>
+        </tr>
+        {% for repository, count in data[data_type] %}
+        <tr>
+            <td>{{ repository }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endfor %}
+</body>
+
+</html>

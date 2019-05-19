@@ -1,0 +1,23 @@
+<doctype html>
+
+    <head>
+        <title>Search Github Repos</title>
+    </head>
+
+    <h2>Search Github Repos</h2>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+
+    {% from "_formhelpers.html" import render_field %}
+    <form method=post>
+        {{ render_field(form.search) }}
+        <p><input type=submit value=Search></p>
+    </form>
