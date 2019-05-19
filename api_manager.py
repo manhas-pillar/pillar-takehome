@@ -9,8 +9,9 @@ headers = {'Content-Type': 'application/json',
 github_username = 'manhas-pillar'
 
 #TODO: Use OAuth Instead
-#TODO: Tokens and other sensitive information should never be stored in a committed file. Remove
-github_basic_token = '7bd420c6982b08073d2f258c6a889690db5419b5'
+#TODO: Tokens and other sensitive information should never be stored in a committed file.
+#TODO: Please replace with the token sent via email. Github is great at removing committed token :)
+github_basic_token = ''
 
 #TODO: Write unite tests for these functions
 def get_repos(organization):
