@@ -10,7 +10,7 @@ github_username = 'manhas-pillar'
 
 #TODO: Use OAuth Instead
 #TODO: Tokens and other sensitive information should never be stored in a committed file. Remove
-github_basic_token = 'eae4c681ee0a92ceaf9ef87fa0986c6df5ab47f4' 
+github_basic_token = '7bd420c6982b08073d2f258c6a889690db5419b5'
 
 #TODO: Write unite tests for these functions
 def get_repos(organization):
